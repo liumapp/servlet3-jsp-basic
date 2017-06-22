@@ -9,7 +9,7 @@ import java.io.IOException;
  * E-mail:liumapp.com@gmail.com
  * home-page:http://www.liumapp.com
  */
-@WebFilter(filterName = "AsyncFilter" , value = {"/index.jsp"} , dispatcherTypes = {DispatcherType.ASYNC , DispatcherType.REQUEST})
+@WebFilter(filterName = "AsyncFilter" , value = {"/servlet/AsyncServlet"} , dispatcherTypes = {DispatcherType.ASYNC , DispatcherType.REQUEST} , asyncSupported = true)
 public class AsyncFilter implements Filter {
     public void init(FilterConfig filterConfig) throws ServletException {
 
